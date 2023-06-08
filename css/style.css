@@ -67,6 +67,9 @@ section article .bgHarley {
 section article .bgSuperman {
   background-image: url("../img/fondoSuperman.png");
 }
+section article .bgMujerMaravilla {
+  background-image: url("../img/fondoMujerMaravilla.png");
+}
 
 section article img {
   border-radius: 50%;
@@ -113,4 +116,55 @@ footer img {
   position: absolute;
   right: 25px;
   width: 100px;
+}
+
+.signo-mas {
+  width: 46px;
+  height: 46px;
+  background-color: #00669f;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  margin-right: 20px;
+
+  right: 0;
+  top: 50vh;
+
+  z-index: 999;
+  display: none;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  header p {
+    background-color: #d1891c;
+  }
+  section > article {
+    margin: 50px 0;
+  }
+  section {
+    position: relative;
+  }
+  .signo-mas {
+    display: flex;
+  }
+  footer {
+    justify-content: space-between;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  section article:nth-child(4) {
+    display: none;
+  }
+  footer p {
+    font-size: 12px;
+  }
 }
