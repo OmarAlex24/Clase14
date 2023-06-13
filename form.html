@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Heroes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Descuentos 20%</p>
+    </header>
+    <h1>Super Héroes</h1>
+    <main>
+      <section>
+        <div class="form">
+          <h3>Añadí tu super!</h3>
+          <h4>Agregá tu personaje favorito completando las opciones.</h4>
+
+          <div class="form-elements-container">
+            <label for="nombre">Nombre*</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre completo"
+              minlength="10"
+              oninvalid="setCustomValidity('Por favor, completar correctamente')"
+            />
+
+            <label for="especie">Especie*</label>
+            <select name="especie" id="especie">
+              <option value="humano">Humano</option>
+              <option value="alien">Alien</option>
+            </select>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" />
+
+            <label for="foto">Agregar Foto</label>
+            <input
+              type="file"
+              name="foto"
+              id="foto"
+              accept=".jpeg, .jpg, .png"
+            />
+
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <label for="poderes">Poderes</label>
+            <input type="checkbox" name="poderes" id="VOLAR" value="VOLAR" />
+            Volar
+            <input
+              type="checkbox"
+              name="poderes"
+              id="SUPERINTELIGENCIA"
+              value="SUPERINTELIGENCIA"
+            />
+            SuperInteligencia
+
+            <input
+              type="checkbox"
+              name="poderes"
+              id="RAYOLASER"
+              value="RAYOLASER"
+            />
+            Vista de rayo laser
+
+            <input
+              type="checkbox"
+              name="poderes"
+              id="BILLETERA"
+              value="BILLETERA"
+            />
+            Billetera Gorda
+
+            <label for="personaje">Tipo de Personajes</label>
+            <input
+              type="radio"
+              name="personaje"
+              id="heroe"
+              value="HEROE"
+            />Héroe / Heroina
+            <input
+              type="radio"
+              name="personaje"
+              id="villano"
+              value="VILLANO"
+            />Villano / Villana
+          </div>
+          <button class="form-button">Añadir</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados a FE1</p>
+      <img class="github" src="img/gitHub.svg" alt="Logo de gitHub" />
+    </footer>
+  </body>
+</html>

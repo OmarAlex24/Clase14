@@ -42,12 +42,12 @@ section article {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 300px;
+  width: 350px;
 }
 
 section article .contenedor {
   height: 200px;
-  width: 300px;
+  width: 350px;
   border-radius: 16px 16px 0 0;
   background-size: cover;
 }
@@ -79,25 +79,27 @@ section article img {
 }
 
 section article h3 {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 70px;
   text-transform: uppercase;
 }
 
 section article p {
-  font-size: 12px;
-  height: 120px;
-  margin: 10px 20px;
+  font-size: 18px;
+  height: 230px;
+  margin: 25px 20px;
+
   text-align: left;
 }
 
 section article button {
+  font-size: 20px;
   background-color: #00669f;
   border: none;
   color: white;
 
   margin: 25px;
-  padding: 10px 30px;
+  padding: 20px 40px;
 }
 
 /********** ESTILOS PARA EL FOOTER **********/
@@ -125,6 +127,7 @@ footer img {
   border-radius: 50%;
   color: white;
   font-size: 20px;
+  border: none;
 
   display: flex;
   justify-content: center;
@@ -137,9 +140,11 @@ footer img {
   top: 50vh;
 
   z-index: 999;
-  display: none;
 }
-
+.signo-mas:hover {
+  cursor: pointer;
+  background-color: #001d2d;
+}
 /* Tablet */
 @media screen and (max-width: 768px) {
   header p {
@@ -151,9 +156,6 @@ footer img {
   section {
     position: relative;
   }
-  .signo-mas {
-    display: flex;
-  }
   footer {
     justify-content: space-between;
   }
@@ -161,9 +163,6 @@ footer img {
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-  section article:nth-child(4) {
-    display: none;
-  }
   footer p {
     font-size: 12px;
   }
