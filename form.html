@@ -18,84 +18,123 @@
     <main>
       <section>
         <div class="form">
-          <h3>Añadí tu super!</h3>
-          <h4>Agregá tu personaje favorito completando las opciones.</h4>
+          <h2>Añadí tu super!</h2>
+          <h3>Agregá tu personaje favorito completando las opciones.</h3>
 
           <div class="form-elements-container">
-            <label for="nombre">Nombre*</label>
-            <input
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Nombre completo"
-              minlength="10"
-              oninvalid="setCustomValidity('Por favor, completar correctamente')"
-            />
+            <div class="nombre">
+              <label for="nombre">Nombre*</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre completo"
+                minlength="10"
+                oninvalid="setCustomValidity('Por favor, completar correctamente')"
+              />
+            </div>
 
-            <label for="especie">Especie*</label>
-            <select name="especie" id="especie">
-              <option value="humano">Humano</option>
-              <option value="alien">Alien</option>
-            </select>
+            <div class="especie">
+              <label for="especie">Especie*</label>
+              <select name="especie" id="especie">
+                <option value="humano">Humano</option>
+                <option value="alien">Alien</option>
+              </select>
+            </div>
 
-            <label for="fecha">Fecha</label>
-            <input type="date" name="fecha" id="fecha" />
+            <div class="fecha">
+              <label for="fecha">Fecha</label>
+              <input type="date" name="fecha" id="fecha" />
+            </div>
 
-            <label for="foto">Agregar Foto</label>
-            <input
-              type="file"
-              name="foto"
-              id="foto"
-              accept=".jpeg, .jpg, .png"
-            />
+            <div class="foto">
+              <label for="foto">Agregar Foto</label>
+              <input
+                type="file"
+                name="foto"
+                id="foto"
+                accept=".jpeg, .jpg, .png"
+              />
+            </div>
 
-            <textarea
-              name="descripcion"
-              id="descripcion"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <div class="textarea">
+              <textarea
+                name="descripcion"
+                id="descripcion"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
 
-            <label for="poderes">Poderes</label>
-            <input type="checkbox" name="poderes" id="VOLAR" value="VOLAR" />
-            Volar
-            <input
-              type="checkbox"
-              name="poderes"
-              id="SUPERINTELIGENCIA"
-              value="SUPERINTELIGENCIA"
-            />
-            SuperInteligencia
+            <div>
+              <div class="poderes">
+                <label for="poderes">Poderes</label>
 
-            <input
-              type="checkbox"
-              name="poderes"
-              id="RAYOLASER"
-              value="RAYOLASER"
-            />
-            Vista de rayo laser
+                <div class="checkbox-poderes">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="VOLAR"
+                    value="VOLAR"
+                  />
+                  <label for="VOLAR">Volar</label>
+                </div>
 
-            <input
-              type="checkbox"
-              name="poderes"
-              id="BILLETERA"
-              value="BILLETERA"
-            />
-            Billetera Gorda
+                <div class="checkbox-poderes">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="SUPERINTELIGENCIA"
+                    value="SUPERINTELIGENCIA"
+                  />
+                  <label for="SUPERINTELIGENCIA">SuperInteligencia</label>
+                </div>
 
-            <label for="personaje">Tipo de Personajes</label>
-            <input
-              type="radio"
-              name="personaje"
-              id="heroe"
-              value="HEROE"
-            />Héroe / Heroina
-            <input
-              type="radio"
-              name="personaje"
-              id="villano"
-              value="VILLANO"
-            />Villano / Villana
+                <div class="checkbox-poderes">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="RAYOLASER"
+                    value="RAYOLASER"
+                  />
+                  <label for="RAYOLASER">Vista de rayo laser</label>
+                </div>
+
+                <div class="checkbox-poderes">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="BILLETERA"
+                    value="BILLETERA"
+                  />
+                  Billetera Gorda
+                </div>
+
+                <hr />
+
+                <label for="personaje">Tipo de Personajes</label>
+
+                <div class="radiobutton-personaje">
+                  <input
+                    type="radio"
+                    name="personaje"
+                    id="heroe"
+                    value="HEROE"
+                  />
+                  <label for="HEROE">Héroe / Heroina</label>
+                </div>
+
+                <div class="radiobutton-personaje">
+                  <input
+                    type="radio"
+                    name="personaje"
+                    id="villano"
+                    value="VILLANO"
+                  />
+                  <label for="VILLANO">Villano / Villana</label>
+                </div>
+              </div>
+            </div>
           </div>
           <button class="form-button">Añadir</button>
         </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,9 +6,13 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  color: white;
 }
-
+textarea {
+  resize: none;
+}
 /********** ESTILOS PARA EL HEADER **********/
 
 header p {
@@ -121,15 +125,15 @@ footer img {
 }
 
 .signo-mas {
-  width: 46px;
-  height: 46px;
+  width: 58px;
+  height: 58px;
   background-color: #00669f;
   border-radius: 50%;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   border: none;
 
-  display: flex;
+  display: absolute;
   justify-content: center;
   align-items: center;
 
@@ -140,11 +144,61 @@ footer img {
   top: 50vh;
 
   z-index: 999;
+  transition: all 0.4s ease;
 }
 .signo-mas:hover {
   cursor: pointer;
   background-color: #001d2d;
 }
+.signo-mas:active {
+  transform: scale(0.8);
+}
+
+/* FORM */
+.form {
+  height: 80vh;
+  width: 50vw;
+  background-color: #00669f;
+  padding: 18px 124px;
+  border-radius: 40px;
+  margin: 40px 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form h2 {
+  font-size: 40px;
+}
+.form h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 20px 0;
+}
+.form-elements-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 2fr;
+  height: 100%;
+  gap: 0 30px;
+}
+.form-elements-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.form-elements-container > div > input,
+select,
+textarea {
+  border-radius: 5px;
+}
+.textarea >,
+.poderes > * {
+  width: 100%;
+}
+
 /* Tablet */
 @media screen and (max-width: 768px) {
   header p {
