@@ -12,9 +12,21 @@
   </head>
   <body>
     <header>
-      <p>Descuentos 20%</p>
+      <p>20% de descuento en todos los productos!</p>
+
+      <div class="logo">
+        <img src="./img/laptop.svg" alt="laptop logo" />
+        <h1>Nombre Tienda</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Registrarme</a></li>
+          <li><a href="#">Ingresar</a></li>
+        </ul>
+      </nav>
     </header>
-    <h1>Super Héroes</h1>
     <main>
       <section>
         <div class="form">
@@ -37,6 +49,7 @@
             <div class="especie">
               <label for="especie">Especie*</label>
               <select name="especie" id="especie">
+                <option value="" disabled selected>Especie</option>
                 <option value="humano">Humano</option>
                 <option value="alien">Alien</option>
               </select>
@@ -63,6 +76,7 @@
                 id="descripcion"
                 cols="30"
                 rows="10"
+                placeholder="Descripcion"
               ></textarea>
             </div>
 
@@ -136,13 +150,13 @@
               </div>
             </div>
           </div>
+
           <button class="form-button">Añadir</button>
         </div>
       </section>
     </main>
     <footer>
-      <p>Todos los derechos reservados a FE1</p>
-      <img class="github" src="img/gitHub.svg" alt="Logo de gitHub" />
+      <p>Todos los derechos reservados a FRONT END 1</p>
     </footer>
   </body>
 </html>
